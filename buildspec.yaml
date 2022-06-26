@@ -3,7 +3,10 @@ version: 0.2
 phases:
 build:
   commands:
-    - echo Building...
+    - echo Building... > /tmp/build.log
+    - echo Done building
+    - ls /home
+    - ls /usr/share/
 artifacts:
   files:
     - '**/*'
