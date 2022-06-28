@@ -1,6 +1,5 @@
 <?php
-var_dump($_ENV);
-var_dump(getenv());
+
 define('CONFIG_ENV', 'APP_CONFIG_PATH');
 if (!getenv(CONFIG_ENV) && !isset($_SERVER[CONFIG_ENV]) && !isset($_ENV[CONFIG_ENV])) 
     die('no config set, please set '.CONFIG_ENV.' environment variable');
