@@ -13,7 +13,7 @@ if ($db->connect_errno)
 echo "connected<br/>";
 
 $sql="select * from deployment";
-if ($result = $mysqli->query($sql)) {
+if ($result = $db->query($sql)) {
     while($obj = $result->fetch_object()){ 
         echo "- $obj->name @ $obj->date<br/>";
     }
